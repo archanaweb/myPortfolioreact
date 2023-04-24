@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
+    .profile-card {
+        width: 100%;
+        position: initial;
+        transform: none;
+    }
+    .sticky-menu {display: none;}
+    .btn {margin-top: 1rem;}
+    .round-img{position: initial;}
+    .timeline li{padding-left: 3rem;}
+    .skills{gap: 1rem;}
+    .skill {width: 42%;padding: 1rem;}
+    .formInput {width: 100%; gap: 1rem;}
+    .formInput input{margin-bottom: 1rem;}
+    .contactForm textarea {width: 100%; margin-bottom: 1rem;}
+    .menu-icon {right: 2rem;}
+}
+
+@media (max-width: 500px) {
+    .formInput {flex-direction: column;}
+
+}
+
