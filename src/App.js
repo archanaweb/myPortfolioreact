@@ -10,6 +10,8 @@ import Resume from './Components/Resume';
 import { useState } from 'react';
 import Advantage from './Components/Advantage';
 import Contact from './Components/Contact';
+import Todo from './Components/Todo';
+import Todo1 from './Components/Todo1';
 
 
 function App() {
@@ -30,14 +32,11 @@ function App() {
             <Resume/>
             <Advantage />
             <Contact  />
-         
-
-
-        
+            
+            
         </div>
       </div>
     </>
-   
   );
 }
 

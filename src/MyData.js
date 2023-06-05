@@ -14,18 +14,18 @@ const psIcon = require  ('./assets/images/photoshop.png')
 const sociallinks = [
     {
         name: "github",
-        link: "",
+        link: "https://github.com/archanaweb",
         icon: "fa-brands fa-github"
     },
     {
         name: "Linkedin",
-        link: "",
+        link: "https://www.linkedin.com/in/archana-thakur-40939b20a/",
         icon: "fa-brands fa-linkedin"
     },
     {
         name: "Website",
-        link: "",
-        icon: "fa-solid fa-globe"
+        link: "mailto:thaarchana7jan@gmail.com",
+        icon: "fa-solid fa-envelope"
     }
 ];
 

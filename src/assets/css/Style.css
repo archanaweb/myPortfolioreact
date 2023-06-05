@@ -7,6 +7,12 @@ body{
     --theme-color: #B594B6;
     --profile-card-width: 20rem;
 }
+/* @media (max-width:767px) {
+    html{
+        font-size: 62.5%;
+    }
+} */
+
     
 .font10{font-size: 0.625rem;}/*10px*/
 .font11{font-size: 0.688rem;}/*11px*/
@@ -168,12 +174,44 @@ header nav i {
     border-radius: 15px;
     background: #1f1f1f;
     width: var(--profile-card-width);
-    padding: 1.5rem;
+    overflow: hidden;
     text-align: center;
     display: flex;
     flex-direction: column;
     max-height: 40rem;
     transform: translateY(-50%);
+    /* background-image: linear-gradient(-45deg, #051937, #2e2d5d, #5f4080, #984f9d, #d65db1);
+    background-size: 200% 200%;
+    animation: gradient 4s linear infinite;
+    transition: all 3s linear; */
+}
+input[type="checkBox"]:checked~.profile-wrap::before{
+    opacity: 1;
+}
+.profile-wrap::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-45deg, #051937, #2e2d5d, #5f4080, #984f9d, #d65db1);
+    background-size: 200% 200%;
+    animation: gradient 4s linear infinite;
+    transition: all 1s linear;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+.profile-wrap {
+    position: relative;
+    padding: 1.5rem;
+    padding-top: 3rem;
+    margin-top: -2.3rem;
+    transition: .3s all ease;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 .container {
     max-width: 1400px;
@@ -194,6 +232,43 @@ header nav i {
     margin-top: 1.5rem;
     padding: 0 1rem;
     text-align: center;
+}
+
+.switch {
+    background: #a1a1a1;
+    width: 3.5rem;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 13px;
+    border-radius: 2rem;
+    transition: all .3s linear;
+    margin-bottom: 10px;
+    transform: scale(.5) translateY(1rem);
+    cursor: pointer;
+    z-index: 9;
+}
+
+.switch::after {
+    content: "";
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+    top: 0.15rem;
+    left: 0.15rem;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
+input[type="checkBox"]:checked + .switch{
+    background-color: var(--theme-color);
+}
+input[type="checkBox"]:checked + .switch::after{
+    translate: 1.8rem 0;
+}
+input[type="checkBox"]{
+    display: none;
 }
 .profile-card h3 {
     color: #fff;
@@ -366,6 +441,19 @@ section{padding: 3rem 0;}
     justify-content: center;
     gap: 0.5rem;
 }
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 50% 0%;
+    }
+}
+
 .skill h3 {
     color: var(--theme-color);
 }
@@ -392,6 +480,7 @@ section{padding: 3rem 0;}
     border: 1px solid #423f3f;
     border-radius: 2rem;
     transition: all .3s ease;
+    color: #fff;
 }
 .contactForm textarea{width: 80%;
     background: transparent;
@@ -400,7 +489,8 @@ section{padding: 3rem 0;}
     box-shadow: none;
     border: 1px solid #423f3f;
     border-radius: 2rem;
-    transition: all .3s ease;}
+    transition: all .3s ease;
+color: #fff;}
 
     input[type=submit] {
         display: block;

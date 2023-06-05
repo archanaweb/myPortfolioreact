@@ -16,7 +16,6 @@ function Todo() {
         setTodoList([...todoList]);
    }
 
-
   return (
     <div>
         <div className='flex'>
@@ -26,11 +25,9 @@ function Todo() {
 
         <p>{inputValue}</p>
         
-
         <ul className='list'>
 
             {todoList.map( (item, i) =>   <li key={i}>
-
                 <span>{item}</span>
                 <button onClick={()=> deleteTodo(i)}>Delete</button>
             </li>)}

@@ -7,7 +7,12 @@ import profileImg from "../assets/animations/profile-imgg.json";
 
 function ProfileCard() {
   return (
+    <div>
+      
     <div className='profile-card'>
+    <input type='checkBox' name='checBox' id="toggle" />
+    <label for="toggle" className='switch'></label>
+      <div className='profile-wrap'>
       <div className='prof-top'>
         <a className='logo' href='#banner'>  <img src={logo} alt=''/> </a>
         <span>
@@ -25,8 +30,10 @@ function ProfileCard() {
             {sociallinks.map((item) => <a key={item.icon} href={item.link}> <i className={item.icon}></i> </a>
             )} 
         </div>
-        <a href='#contact' className='btn'>Hire me</a>
+        <a href='#contactSec' className='btn'>Hire me</a>
 
+    </div>
+    </div>
     </div>
   )
 }

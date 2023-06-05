@@ -1,9 +1,12 @@
 import React from 'react';
-import {timeline} from '../MyData'
+import {timeline} from '../MyData';
+import AnimatedSection from './AnimatedSection';
+
 
 function TimeLine() {
   return (
    <>
+   <AnimatedSection>
    <ul className='timeline'>
    {timeline.map(item => 
    <li key={item.title}>
@@ -14,6 +17,7 @@ function TimeLine() {
         </li>
    )}
    </ul>
+   </AnimatedSection>
    
    </>
   )
