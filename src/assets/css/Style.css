@@ -7,13 +7,11 @@ body{
     --theme-color: #B594B6;
     --profile-card-width: 20rem;
 }
-/* @media (max-width:767px) {
-    html{
-        font-size: 62.5%;
-    }
-} */
 
-    
+html{
+    font-size: 100%;
+}
+   
 .font10{font-size: 0.625rem;}/*10px*/
 .font11{font-size: 0.688rem;}/*11px*/
 .font12{font-size: 0.750rem;}/*12px*/
@@ -507,4 +505,17 @@ color: #fff;}
         background: transparent;
         color: var(--theme-color);
     }
+
+    @media (max-width:998px) {
+        html{
+            font-size: 85%;
+        }
+    }
+    
+    @media (max-width:768px) {
+        html{
+            font-size: 76%;
+        }
+    }
+    
 

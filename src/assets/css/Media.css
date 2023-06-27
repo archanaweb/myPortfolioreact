@@ -6,17 +6,23 @@
         width: 100%;
         position: initial;
         transform: none;
+        max-height: fit-content;
     }
     .sticky-menu {display: none;}
     .btn {margin-top: 1rem;}
-    .round-img{position: initial;}
+    .round-img{bottom: 0;--size: 9rem;}
     .timeline li{padding-left: 3rem;}
-    .skills{gap: 1rem;}
-    .skill {width: 42%;padding: 1rem;}
+    .skills{gap: 4rem;justify-content: space-between;}
+    .skill {width: 42%;border-radius: 3rem;}
     .formInput {width: 100%; gap: 1rem;}
     .formInput input{margin-bottom: 1rem;}
     .contactForm textarea {width: 100%; margin-bottom: 1rem;}
-    .menu-icon {right: 2rem;}
+    .menu-icon {right: 2rem;top: 1rem;
+        z-index: 9999;}
+        .prof-top {font-size: 1.3rem;align-items: center;}
+        .logo {
+            width: 8rem;
+        }
 }
 
 @media (max-width: 500px) {
