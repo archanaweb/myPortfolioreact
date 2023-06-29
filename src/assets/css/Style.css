@@ -79,7 +79,7 @@ a:hover {color: var(--theme-color);}
                                     
 .sticky-menu {
     position: fixed;
-    right: 4rem;
+    right: 2rem;
     top: 50%;
     transform: translatey(-50%);
 }
@@ -128,8 +128,8 @@ header nav {
     display: grid;
     --size: 3rem;
     position: absolute;
-    right: 4rem;
-    top: 2rem;
+    right: 2rem;
+    top: 1rem;
     border: 1px solid #575757;
     border-radius: 50%;
     width: var(--size);
@@ -137,6 +137,7 @@ header nav {
     place-items: center;
     color: #fff;
     transition: all .3s ease;
+    z-index: 3;
 }
 .menu-icon:hover {
     color: var(--theme-color);
@@ -505,6 +506,15 @@ color: #fff;}
         background: transparent;
         color: var(--theme-color);
     }
+
+    body, html {
+        scroll-snap-type: y mandatory;
+    }
+    
+    section, .profile-card {
+        scroll-snap-align: start;
+    }
+    
 
     @media (max-width:998px) {
         html{

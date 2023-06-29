@@ -56,8 +56,9 @@ function Contact() {
   
   return (
     <div>
-        <AnimatedSection>
+        
          <section className='about-section full-height center-section' id="contactSec">
+         <AnimatedSection>
     <span className='heading-title'><i className='fa-solid fa-envelope me-2'></i> Contact</span>
     <h2 className='font48 fw500 color-white lh-sm text-capitalize'>Let's Work <span className='color-theme'>Together</span></h2>
     {console.log(formData)}
@@ -110,9 +111,9 @@ function Contact() {
             <input type='submit' value="Send" />
         </form>
     </div>
-    
+    </AnimatedSection>
    </section>
-   </AnimatedSection>
+   
     </div>
   )
 }

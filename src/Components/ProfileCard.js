@@ -11,7 +11,7 @@ function ProfileCard() {
       
     <div className='profile-card'>
     <input type='checkBox' name='checBox' id="toggle" />
-    <label for="toggle" className='switch'></label>
+    <label htmlFor="toggle" className='switch'></label>
       <div className='profile-wrap'>
       <div className='prof-top'>
         <a className='logo' href='#banner'>  <img src={logo} alt=''/> </a>

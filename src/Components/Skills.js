@@ -1,12 +1,12 @@
 import React from 'react'
 import { skills } from '../MyData';
-import AnimatedSection from './AnimatedSection';
+
 
 
 const Skills = () => {
   return (
     <>
- <AnimatedSection>
+ 
   <ul className='skills'>
     {skills.map( (item, index) =>
      <li key={index} className='skill'>
@@ -16,7 +16,6 @@ const Skills = () => {
     </li>
     )}
   </ul>
-  </AnimatedSection>
 
     </>
   )

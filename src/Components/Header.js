@@ -19,7 +19,7 @@ function Header() {
           <i className="fa-solid fa-bars"></i>
         </div>
        {shownav && <div className='menu-icon' onClick={hidemenu}>
-           <i class="fa-solid fa-xmark"></i> 
+           <i className="fa-solid fa-xmark"></i> 
         </div> }
         
         <Nav name={true}/>
