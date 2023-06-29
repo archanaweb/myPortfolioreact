@@ -4,20 +4,24 @@
     }
     .profile-card {
         width: 100%;
-        position: initial;
+        position: sticky;
         transform: none;
         max-height: fit-content;
+        margin-top: 1rem;
     }
+    .switch::after{width: 1.8rem;
+        height: 1.8rem;}
+    .profile-wrap {margin-top: -3.3rem;}
     .sticky-menu {display: none;}
     .btn {margin-top: 1rem;}
-    .round-img{bottom: 0;--size: 9rem;}
+    .round-img{bottom: 0;--size: 8rem;}
     .timeline li{padding-left: 3rem;}
     .skills{gap: 4rem;justify-content: space-between;}
     .skill {width: 42%;border-radius: 3rem;}
     .formInput {width: 100%; gap: 1rem;}
     .formInput input{margin-bottom: 1rem;}
     .contactForm textarea {width: 100%; margin-bottom: 1rem;}
-    .menu-icon {right: 2rem;top: 1rem;
+    .menu-icon {right: 2rem;top: 1.5rem;
         z-index: 9999;}
         .prof-top {font-size: 1.3rem;align-items: center;}
         .logo {
