@@ -15,7 +15,13 @@ function Header() {
   return (
     <header className={shownav ? 'sidebar-opened' : ''}>
 
-        <div className='menu-icon' onClick={showmenu}><i className="fa-solid fa-bars"></i></div>  
+      <div className='menu-icon' onClick={showmenu}>
+          <i className="fa-solid fa-bars"></i>
+        </div>
+       {shownav && <div className='menu-icon' onClick={hidemenu}>
+           <i class="fa-solid fa-xmark"></i> 
+        </div> }
+        
         <Nav name={true}/>
         <div className='backdrop' onClick={hidemenu}></div>
 

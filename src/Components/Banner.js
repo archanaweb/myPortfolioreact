@@ -20,7 +20,7 @@ function Banner() {
         {/* <h2 className="font48 fw400 color-white">Frontend Designer & <br/>Developer</h2> */}
         <h2 className="font48 fw400 color-white">
        
-  <span>Frontend </span>{' '} 
+  <span>Frontend <br /></span>{' '} 
   <TypeAnimation
     sequence={[
       'Designer',
