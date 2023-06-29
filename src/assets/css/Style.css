@@ -509,6 +509,7 @@ color: #fff;}
 
     body, html {
         scroll-snap-type: y mandatory;
+        scroll-padding: 10px;
     }
     
     section, .profile-card {
