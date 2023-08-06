@@ -515,6 +515,21 @@ color: #fff;}
     section, .profile-card {
         scroll-snap-align: start;
     }
+
+    .box-row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .squres {
+        border: 1px solid #343434;
+        height: 100px;
+        width: 100%;
+      }
+      .box-container {
+        margin: 25px;
+        height: 100vh;
+      }
     
 
     @media (max-width:998px) {

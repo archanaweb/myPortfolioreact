@@ -51,7 +51,7 @@ const timeline = [
     {
         year: "2020",
         projectName: 'Graduation',
-        title: 'Compleated graduation from IGNOU'
+        title: 'Compleated graduation from DU'
     },
 
 ];

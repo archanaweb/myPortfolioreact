@@ -12,6 +12,7 @@ import Advantage from './Components/Advantage';
 import Contact from './Components/Contact';
 import Todo from './Components/Todo';
 import Todo1 from './Components/Todo1';
+import Box from './Components/Box'
 
 
 function App() {
@@ -31,9 +32,7 @@ function App() {
             <About/>
             <Resume/>
             <Advantage />
-            <Contact  />
-            
-            
+            <Contact  />     
         </div>
       </div>
     </>
